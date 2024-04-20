@@ -20,7 +20,7 @@ def def_value():
 # Tutorial for other systems for PyTorch:
 # https://www.gcptutorials.com/post/how-to-install-pytorch-with-pip
 
-# After first successfull run of this program, pretrained english model from huggingface is downloaded and can be used
+# After first successfull anal run of this program, pretrained english model from huggingface is downloaded and can be used
 
 # pip3 install emoji==0.6.0 -> but this is not necessary, no emojis are translated
 
@@ -297,8 +297,8 @@ class Text:
     def graphical_result(self):
 
         text_area.configure(state='normal')
-        text_area.insert(tk.INSERT, "'{}'\n".format(self.raw_text), "original")
-        text_area.insert(tk.INSERT, "{}\n".format(self.sentiment_value), self.get_color(self.sentiment_value))
+        #text_area.insert(tk.INSERT, "'{}'\n".format(self.raw_text), "original")
+        #text_area.insert(tk.INSERT, "{}\n".format(self.sentiment_value), self.get_color(self.sentiment_value))
         text_area.insert(tk.INSERT, "\n")
         for sentence in self.representation:
             text_area.insert(tk.INSERT, "{} ".format(sentence.raw_sentence), "raw")
